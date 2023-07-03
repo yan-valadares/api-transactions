@@ -15,3 +15,6 @@
     1° passo -> Instalar o Knex e o driver do sqlite (banco utilizando na aplicação)
     2° passo -> Criar o arquivo de conexão com o banco
     3° passo -> Configurar o arquivo .gitignore para ignorar o arquivo do banco
+    4° passo -> Criar o arquivo knextfile para configuração da utilização do banco no ambiente de desenvolvimento
+    5° passo -> Configurar o package.json para entendimento do ts no knex
+    6° passo -> Configurar a criação das migrations
