@@ -18,3 +18,7 @@
     4° passo -> Criar o arquivo knextfile para configuração da utilização do banco no ambiente de desenvolvimento
     5° passo -> Configurar o package.json para entendimento do ts no knex
     6° passo -> Configurar a criação das migrations
+    7° passo -> Criar as migrations
+
+### Observações
+    1-> Migrations NUNCA podem ser alteradas se já foram para produção
