@@ -10,6 +10,8 @@
     7° passo -> Instalar o eslint para padronização do projeto
     8° passo -> Criar o arquivo de configuração do eslint (.eslintrc.json) e definir o padrão a ser seguido (nesse caso node)
     9° passo -> Configurar nas opções do VSCode para que os arquivos sejam padronizados após o salvamento
+    10° passo -> Instalar o zod para validação de dados dentro do ambiente
+    11° passo -> Criar uma pasta env dentro da pasta src e criar um arquivo index.ts para configuração do zod 
 
 ###     Configurando o banco de dados
     1° passo -> Instalar o Knex e o driver do sqlite (banco utilizando na aplicação)
@@ -22,3 +24,7 @@
 
 ### Observações
     1-> Migrations NUNCA podem ser alteradas se já foram para produção
+    2-> Criar um arquivo .env na raíz do projeto para armazenar as variáveis do ambiente (ambiente de produção, nesse caso)
+    3-> O arquivo .env pode conter informações sensíveis, então deve ser colado dentro do arquivo .gitignore
+    4-> Criar um arquivo .env.example para subir exemplos do conteúdo do .env, já que desenvolvedores não envolvidos na criação da aplicação não sabem o que o arquivo .env deve conter
+    5-> É interessante a criação de "erros personalizados", fazendo com que a identificação de erros (queremos que não, mas pode ser que aconteçam) seja facilitada.
