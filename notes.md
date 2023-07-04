@@ -28,3 +28,8 @@
     3-> O arquivo .env pode conter informações sensíveis, então deve ser colado dentro do arquivo .gitignore
     4-> Criar um arquivo .env.example para subir exemplos do conteúdo do .env, já que desenvolvedores não envolvidos na criação da aplicação não sabem o que o arquivo .env deve conter
     5-> É interessante a criação de "erros personalizados", fazendo com que a identificação de erros (queremos que não, mas pode ser que aconteçam) seja facilitada.
+    5-> Todo plugin do fastify deve ser uma função assíncrona
+    6-> O prefix no registro de um plugin serve para definir uma rota padrão (pré-fixada) evitando que as rotas do mesmo plugin precisem ter mais um de parâmetro na URL
+    7-> O arquivo com extensão .d.ts serve para sobrescrição de tipos de dados, nesse caso usado para escrever dados sobre as tabelas do banco
+    8-> Os cookies são formas de mantermos o contexto entre as requisições
+    9-> Para uso de cookie o plugin @fastify/cookie é necessário
