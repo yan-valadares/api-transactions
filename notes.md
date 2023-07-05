@@ -33,3 +33,23 @@
     7-> O arquivo com extensão .d.ts serve para sobrescrição de tipos de dados, nesse caso usado para escrever dados sobre as tabelas do banco
     8-> Os cookies são formas de mantermos o contexto entre as requisições
     9-> Para uso de cookie o plugin @fastify/cookie é necessário
+
+## Testes Automatizados
+    - Tipos de testes
+        - 1: Unitários-> unidadade da sua aplicação
+        - 2: Integração-> comunicação entre duas ou mais unidades
+        - 3: e2e - ponta a ponta-> simulam um usuário operando na nossa aplicação (teste completo)
+            e2e no front-end: faz todo o passo a passo de um login, por exemplo, desde a abertura do navegador até o fim da aplicação
+            e2e no back-end: chamadas HTTP, WebSockets
+    - Pirâmides de testes: 
+            - e2e-> não dependem de nenhuma tecnologia e não dependem da arquitetura do projeto
+    - O vitest é o framework utiliza nessa aplicação para os testes automatizados
+    - O teste é dividido em "três principais partes": o título do teste, a requisição que ele irá fazer, a validação da resposta dessa requisição
+    - A ferramenta 'supertest' serve como uma forma de fazer requisições (para teste) sem que o servidor esteja UP
+        - Contudo, o 'supertest' é desenvolvido em JS e para utilização do mesmo em uma aplicação TS se faz necessário a instalação do suporte para TS
+    - A aplicação deve estar pronta para receber requisições antes do teste ser iniciado, por isso o uso do 'beforeAll'
+    - A aplicação deve ser fechada após o teste ser finalizado, por isso o uso do 'afterAll'
+    - Todo teste deve-se excluir de qualquer contexto
+    - Um teste jamais deve ser escrito sendo dependente de outro teste
+    - É importante a separação dos ambientes de desenvolvimento e de teste, pois um pode influenciar no outro, o que não é muito interessante
+    - O teste deve se adaptar ao código e não vice-versa
