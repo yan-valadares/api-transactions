@@ -53,3 +53,9 @@
     - Um teste jamais deve ser escrito sendo dependente de outro teste
     - É importante a separação dos ambientes de desenvolvimento e de teste, pois um pode influenciar no outro, o que não é muito interessante
     - O teste deve se adaptar ao código e não vice-versa
+
+## Deploy
+    - Nenhuma plataforma Node.js entenderá o código em TS, logo precisamos convereter o código para JS
+    - A ferramenta build (conversão de TS para JS) utilizada será 'tsup'
+    - Não faz sentido o eslint rodar no nosso código de deploy, já que o setup dele está pré-definido como node
+    - Não faz sentido a pasta build (build do projeto) ser incluida no git, então devemos coloca-lá no .gitignore
